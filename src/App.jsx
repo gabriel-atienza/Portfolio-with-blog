@@ -11,7 +11,7 @@ export default function App() {
           <img
             src={profilePic}
             alt="Profile"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover grayscale contrast-125"
           />
         </div>
 
