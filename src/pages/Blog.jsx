@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Blog() {
   return (
     <div className="min-h-screen px-6 py-12 bg-bg text-white">
@@ -5,19 +7,15 @@ export default function Blog() {
 
       <div className="mt-6 space-y-4">
 
-        <div className="border border-gray-700 p-4">
+        <Link to="/blog/week-1-networking" className="block border border-gray-700 p-4 hover:border-neon transition">
           <h2 className="font-bold">Week 1: Networking Basics</h2>
-          <p className="text-gray-400 text-sm">
-            Learned about IP addresses, routing, and basic network structure.
-          </p>
-        </div>
+          <p className="text-gray-400 text-sm">IP addresses, routing, subnetting</p>
+        </Link>
 
-        <div className="border border-gray-700 p-4">
-          <h2 className="font-bold">CompTIA Prep Notes</h2>
-          <p className="text-gray-400 text-sm">
-            Started reviewing IT concepts and terminology.
-          </p>
-        </div>
+        <Link to="/blog/comptia-notes" className="block border border-gray-700 p-4 hover:border-neon transition">
+          <h2 className="font-bold">CompTIA Notes</h2>
+          <p className="text-gray-400 text-sm">Core IT concepts summary</p>
+        </Link>
 
       </div>
     </div>
